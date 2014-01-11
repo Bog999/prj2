@@ -9,4 +9,4 @@ ftp = bftplib.FTP("192.168.154.172", 2121)
 ftp.login("z")
 ftp.storbinary("STOR e.txt", file)
 ftp.quit()
-print "done"
+print "donee"
