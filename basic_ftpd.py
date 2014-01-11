@@ -60,11 +60,11 @@ def main():
 
     # Specify a masquerade address and the range of ports to use for
     # passive connections.  Decomment in case you're behind a NAT.
-    #handler.masquerade_address = '151.25.42.11'
+    handler.masquerade_address = '192.168.102.130'
     handler.passive_ports = range(2222, 2223)
 
     # Instantiate FTP server class and listen on 0.0.0.0:2121
-    address = ('', 2121)
+    address = ('0.0.0.0', 2121)
     server = FTPServer(address, handler)
 
     # set a limit for connections
